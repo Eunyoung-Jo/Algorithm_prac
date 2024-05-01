@@ -1,5 +1,3 @@
 function solution(n) {
-    let reversedStr = String(n).split('').reverse().join('');
-    let result = reversedStr.split('').map(Number);
-    return result;
+    return (n + '').split('').reverse().map(n => parseInt(n));
 }
